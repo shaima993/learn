@@ -1,0 +1,90 @@
+Microsoft Windows [version 10.0.22631.5039]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\EcoSain\learn_git>git init
+Initialized empty Git repository in C:/EcoSain/learn_git/.git/
+
+C:\EcoSain\learn_git>git add .
+
+C:\EcoSain\learn_git>git add third.txt
+
+C:\EcoSain\learn_git>git commit -m "adding third.txt"
+[master (root-commit) 615b6c6] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+C:\EcoSain\learn_git>git log.
+git: 'log.' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+C:\EcoSain\learn_git>git log
+commit 615b6c694b2596a57ef7f948edd8f9cf61f9e372 (HEAD -> master)
+Author: Shaima993 <chayma.melliti@yahoo.com>
+Date:   Sat Apr 12 14:01:26 2025 +0200
+
+    adding third.txt
+
+C:\EcoSain\learn_git>git add fourth.txt
+
+C:\EcoSain\learn_git>
+C:\EcoSain\learn_git>git commit -m "adding fourth.txt"
+[master 1635c89] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+C:\EcoSain\learn_git>git rm "third.txt
+rm 'third.txt'
+
+C:\EcoSain\learn_git>git rm third.txt
+fatal: pathspec 'third.txt' did not match any files
+
+C:\EcoSain\learn_git>git add .
+
+C:\EcoSain\learn_git>git commit -m "removing third.txt"
+[master 7b981f5] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+C:\EcoSain\learn_git>git log
+commit 7b981f52b4e31a0c339c5ecfc5f57e4aebea2412 (HEAD -> master)
+Author: Shaima993 <chayma.melliti@yahoo.com>
+Date:   Sat Apr 12 14:07:34 2025 +0200
+
+    removing third.txt
+
+commit 1635c89ced09519fb2f807b64aa52a189c490b61
+Author: Shaima993 <chayma.melliti@yahoo.com>
+Date:   Sat Apr 12 14:04:07 2025 +0200
+
+    adding fourth.txt
+
+commit 615b6c694b2596a57ef7f948edd8f9cf61f9e372
+Author: Shaima993 <chayma.melliti@yahoo.com>
+Date:   Sat Apr 12 14:01:26 2025 +0200
+
+    adding third.txt
+
+C:\EcoSain\learn_git>git config --global core.pager cat
+
+C:\EcoSain\learn_git>git config --global --list
+user.email=chayma.melliti@yahoo.com
+user.name=Shaima993
+core.pager=cat
+
+C:\EcoSain\learn_git>git remote add origin https://github.com/shaima993/learn.git
+
+C:\EcoSain\learn_git>git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 650 bytes | 50.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/shaima993/learn.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\EcoSain\learn_git>
+C:\EcoSain\learn_git>
